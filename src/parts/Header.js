@@ -11,7 +11,7 @@ export default function Header(props) {
     }
 
     return (
-        <Header className="spacing-sm">
+        <header className="spacing-sm">
             <div className="container">
                 <nav class="navabr navbar-expand-lg navbar-light">
                     <BrandIcon />
@@ -41,6 +41,6 @@ export default function Header(props) {
                 </div>
                 </nav>
             </div>
-        </Header>
+        </header>
     )
 }
