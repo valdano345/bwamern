@@ -1,0 +1,6 @@
+{
+    "comppilerOptions":{
+        "baseUrl": "src"
+    },
+    "include": ["src/**?*"]
+}
