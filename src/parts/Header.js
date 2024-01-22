@@ -11,12 +11,12 @@ export default function Header(props) {
     }
 
     return (
-        <header className="spacing-sm">
+        <header className="testing">
             <div className="container">
-                <nav class="navabr navbar-expand-lg navbar-light">
+                <nav className="navabr navbar-expand-lg navbar-light">
                     <BrandIcon />
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
+                <div className="collapse navbar-collapse">
+                    <ul className="navbar-nav ml-auto">
                         <li className={`nav-item${getNavLinkClass("/")}`}>
                             <Button className="nav-link" type="link" href="">
                                 Home
