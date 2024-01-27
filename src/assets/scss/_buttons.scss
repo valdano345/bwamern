@@ -18,6 +18,8 @@
   border: $btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, 4px);
   @include transition($btn-transition);
+  min-height: 50px;
+
 
   @include hover() {
     color: $body-color;
