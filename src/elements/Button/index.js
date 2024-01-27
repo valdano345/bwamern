@@ -39,7 +39,7 @@ export default function Button(props) {
       )
     }else{
       return(
-        <Link to={props.href} className={className.join(" ")} style={props.style} onClick={onclick}>
+        <Link to={props.href} className={className.join(" ")} style={props.style} onClick={onClick}>
           {props.children}
         </Link>
       )
@@ -47,26 +47,26 @@ export default function Button(props) {
   }
 
   return (
-    <Button className={className.join(" ")} style={props.style} onClick={onclick}>
+    <button className={className.join(" ")} style={props.style} onClick={onClick}>
       {props.children}
-    </Button>
+    </button>
   )
 }
 
 Button.prototype = {
-  type: propTypes.oneOf(["Button", "Link"]),
+  type: propTypes.oneOf(["button", "link"]),
   onClick: propTypes.func,
   href: propTypes.string,
   target: propTypes.string,
   className: propTypes.string,
-  isExternal: propTypes.bool,
   isPrimary: propTypes.bool,
+  isLight: propTypes.bool,
+  isExternal: propTypes.bool,
   isDisabled: propTypes.bool,
   isLoading: propTypes.bool,
   isSmall: propTypes.bool,
   isLarge: propTypes.bool,
   isBlock: propTypes.bool,
-  isExternal: propTypes.bool,
   hasShadow: propTypes.bool,
   
 }
