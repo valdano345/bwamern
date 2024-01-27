@@ -11,9 +11,9 @@ export default function Header(props) {
     }
 
     return (
-        <header className="testing">
+        <header className="spacing-sm">
             <div className="container">
-                <nav className="navabr navbar-expand-lg navbar-light">
+                <nav className="navbar navbar-expand-lg navbar-light">
                     <BrandIcon />
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav ml-auto">
