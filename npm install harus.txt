@@ -1,6 +1,8 @@
 - npx create-react app. 
 - npm i react-router-dom@5.1.2 node-sass@4.13.1
-- npm i react-reveal@1.1.2 --save
+- npm i react-reveal@1.1.2 --- save
+- npm i react-date-range@1.0.3
+- npm i date-fns@2.11.1
 
 
 alias graph="git log --all --decorate --oneline --graph"
