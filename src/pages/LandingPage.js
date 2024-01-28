@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 import Hero from "../parts/Hero"
 import Header from "../parts/Header"
 import MostPicked from "../parts/MostPicked"
