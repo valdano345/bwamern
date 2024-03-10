@@ -1,25 +1,25 @@
-import React, {Component} from 'react'
-
+import React, { useEffect } from 'react'
 import Header from '../parts/Header';
 import PageDetailTitle from '../parts/PageDetailTitle';
 import ItemDetails from '../json/itemDetails.json'
 
-export default class DetailsPage extends Component{
-    ComponentDidMount(){
-        window.title = "Details Page";
+const DetailsPage = (props) => {
+    useEffect(() => {
+        document.title = "Details Page"
         window.scrollTo(0, 0);
-    }
+    }, []);
+    
+    const breadcrumb  = [
+        {pageTitle: "Home", pageHref: ""},
+        {pageTitle: "House Details", pageHref: ""}
+    ]
+    
 
-    render(){
-        const breadcrumb  = [
-            {pageTitle: "Home", pageHref: ""},
-            {pageTitle: "House Details", pageHref: ""}
-        ]
-        return(
-            <>
-                <Header {...this.props}></Header>
-                <PageDetailTitle breadcrumb={breadcrumb} data={ItemDetails} />
-            </>
-        )
-    }
+    return (
+        <>
+            <Header {...props}></Header>
+            <PageDetailTitle breadcrumb={breadcrumb} data={ItemDetails} />
+        </>
+    )
 }
+export default DetailsPage
