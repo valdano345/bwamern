@@ -6,10 +6,24 @@ import BrandIcon from './IconText'
 
 
 export default function Header(props) {
-    
     const getNavLinkClass = path => {
         return props.location.pathname === path ? " active" : "";
     }
+
+    if(props.isCentered)
+    return(
+        <Fade>
+            <header className="sapcing-sm">
+                <div className="container">
+                    <div className="navbar navabr-expand-lg navbar-light">
+                        <Button className="brand-text-icon mx-auto" href="" type="link">
+                            Stay<span className="text-gray-900">cation</span>
+                        </Button>
+                    </div>
+                </div>
+            </header>
+        </Fade>
+    )
 
     return (
         <Fade>
